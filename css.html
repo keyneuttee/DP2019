@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            b{
+                /*요소선택자*/
+                color: red
+            }
+                /*클래스선택자*/
+            .c_name{
+                color: green;
+            }
+                /*아이디선택자*/
+            #i_name{
+                color: pink;
+            }
+            #i_name2:before{ content: "☆";}
+            #i_name2:after{ content: "★";}
+            #i_name2:first-letter{font-size: 60px;}
+            #i_name2::first-line{ color: violet;}
+
+            .con:first-child { color:blue;}
+            .con:last-child { color: red;}
+            .con:nth-child(4){ color: cornflowerblue}
+
+        </style>
+
+
+    </head>
+    <body>
+        <b>내용1</b>
+        <div class="c_name">클래스</div>
+        <div id="i_name">아이디</div>
+
+        <div id="i_name2">가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자</div>
+
+        <ui>
+            <li class="con">내용1</li>
+            <li class="con">내용2</li>
+            <li class="con">내용3</li>
+            <li class="con">내용4</li>
+            <li class="con">내용5</li>
+        </ui>
+
+        <style>
+        a:link{color: black
+            text-decoration: none;}
+        a:visited{color: green;}
+        a:hover{color: yellow;}
+        a:active{color: pink;}
+        </style>
+
+
+    </body>
+</html>
