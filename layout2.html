@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>layout2</title>
+        <style>
+            header{
+                background-color: #02918c;
+                color: white; /*글씨색상은 상속됩니다*/
+            }
+            
+            header>h1>span:nth-child(2){
+                color: #cfc91d;
+            }
+            header>nav>ul>li{
+                float:left;
+            }
+
+            .clear{
+                clear:both; height:0px; overflow:hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <header>
+            <h1>
+                <span>MY</span><span>POLIO</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>About ME</li>
+                    <li>Services</li>
+                    <li>My work</li>
+                    <li>contect me</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            </header>
+        </div>
+    </body>
+
+</html>
