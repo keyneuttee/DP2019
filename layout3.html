@@ -3,6 +3,9 @@
 
 <style>
     /* CSS작성하는곳 */
+    body{
+        background-image: url("images/layout_jpg/layout3_back.jpg");
+    }
     header li{
         float:left;
         list-style: none;
@@ -18,6 +21,25 @@
     border-bottom: solid 1px gray;
 }
 
+.card_part{
+    width:310px;
+    background-color: #ffffff;
+    list-style:none;
+}
+
+.card_part dt{
+    font-weight: bolder;
+    margin :10px;
+}
+
+.card_part dd{
+    font-size:10px;
+}
+
+#content>ul{
+    margin: 0px;
+    padding:0px;
+}
 
 </style>
 
@@ -28,6 +50,7 @@
     </head>
 
     <body>
+        <a href="index.html">뒤로가기</a>
         <div id="wrap">
             <header>
                 <h1>Gridly</h1>
@@ -44,7 +67,29 @@
                     </ul> 
                 </nav>
             </header>
-            <body>content</body>
+            <div id="content">
+                <ul>
+                    <li class="card_part">
+                        <div class="top_visual">
+                            <img src="images/layout_jpg/layout3_img1.jpg">
+                            <div>photoshop design</div>
+                        </div>
+
+                        <div class="bottom_info">
+                            <dl> 
+                                <dt>Dulux Colour Awards</dt>
+                            </dl>
+
+                                <p>A direct mail kit that announces the Dulux Colour Awards Competition has commenced.
+                                    A collection of posters showing the famous colours of history, 
+                                    advertises you add your own colours to history.
+                                </p>
+                            
+                            <div>read on-></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <footer>footer</footer>
         </div>
     </body>
