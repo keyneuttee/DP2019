@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>layout2</title>
     <style>
+
+        body{
+            margin:0px;
+        }
+
         header{
             background-color: #02918c;
             color: white;
-            height: 50px;
+            padding: 10px 50px; /* 상하좌우 */
         }
         header>h1>span:nth-child(2){
             color: #cfc91d;
@@ -83,7 +88,7 @@
 
         section>p{
             width: 600px;
-            margin: 0px auto;
+            margin: 30px auto;
         }
 
         section>#about_list>li{
@@ -107,6 +112,22 @@
 
         section dd{
             margin : 0px;
+        }
+
+        section>#work_list>li{
+            float: left;
+            list-style: none;
+            width: 25%;
+        }
+
+        section>#work_list>li>img{
+            display: inline;
+            display:  block;
+            width: 100%;
+        }
+
+        section>#work_list{
+            padding: 0px;
         }
 
     </style>

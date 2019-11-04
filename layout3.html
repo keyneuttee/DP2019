@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    /* CSS작성하는곳 */
+    header li{
+        float:left;
+        list-style: none;
+        padding: 0px 15px; /* 상하 좌우 */
+        padding: 0px 15px 0px 0px; /* 상 우 하 좌 */
+    }
+
+     .clear {clear:both; height:0px; overflow: hidden;}
+
+.short_line{
+    width:40px;
+    height:0px;
+    border-bottom: solid 1px gray;
+}
+
+
+</style>
+
+
+    <head>
+        <title>Layout3</title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>Gridly</h1>
+                <div class="short_line"></div> 
+                <nav>
+                    <ul>
+                        <li>home</li>
+                        <li>digital designs</li>
+                        <li>web designs</li>
+                        <li>branding/identity</li>
+                        <li>about me</li>
+                        <li>contact</li>
+                        <div class="clear"></div>
+                    </ul> 
+                </nav>
+            </header>
+            <body>content</body>
+            <footer>footer</footer>
+        </div>
+    </body>
+
+</html>
