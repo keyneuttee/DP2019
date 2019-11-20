@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout2</title>
+    <style>
+
+        body{
+            margin:0px;
+        }
+
+        header{
+            background-color: #ffffff;
+            color: rgb(0, 123, 255);
+            padding: 10px 50px; /* 상하좌우 */
+        }
+        header>h1>span:nth-child(2){
+            color: #cfc91d;
+        }
+
+        header li{
+            float:left;
+            list-style: none;
+            padding: 5px 10px; 
+        }
+
+        .clear{
+            clear:both; height:0px; overflow: hidden;
+        }
+
+        header>h1{
+            float: left;
+            margin: 0px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        header>nav{
+            float: right;
+            font-family: 'Jua', sans-serif;
+        }
+
+        header ul{
+            margin: 9px 0px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        #main_visual{
+            background-image: url("final/오늘의느티.jpg");
+            /* height: 400px; */
+            /* background-size: 100% auto; 가로 세로 */
+            background-size: cover;
+            background-repeat: no-repeat; 
+            /* repeat, no-repeat, repeat-x, repeat-y */
+            background-color: black;
+            background-position: 50% 50%;
+
+            color:rgb(255, 255, 255);
+            text-align: center;
+            padding: 100px 0px;
+            font-family: 'Jua', sans-serif;
+           
+        }
+
+        #main_visual>h2{
+            width:900px;
+            margin: 10px auto;
+            letter-spacing: 20px;
+            font-size: 40px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        #title_top{
+            font-size: 25px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        #title_bottom{
+            font-size:23px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        #main_visual>img{
+            margin-top: 80px;
+        }
+
+        section{
+            text-align: center;
+        }
+
+        section>h3{
+            color: #0082d8;
+            font-weight: normal;
+            font-size:30px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        section>p{
+            width: 600px;
+            margin: 30px auto;
+            font-family: 'Jua', sans-serif;
+        }
+
+        section>#list>li{
+             width:25%;
+             width:calc(25% - ( 1px / 4 * 3) - 50px - 50px);
+             float:left;
+             list-style: none;
+             border-right: solid 1px #ccc;
+             padding: 50px;
+             font-family: 'Jua', sans-serif;
+        }
+
+        section>#list>li:nth-child(4){
+            border: none;
+        }
+
+        section>#list{
+            padding: 0px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        section dd{
+            margin : 0px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        section>#work_list>li{
+            float: left;
+            list-style: none;
+            width: 25%;
+        }
+
+        section>#work_list>li>img{
+            display: inline;
+            display:  block;
+            width: 100%;
+        }
+
+        section>#work_list{
+            padding: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="./index.html">뒤로가기</a>
+    <div id="wrap">
+        <header>
+            <h1>
+                <span>오늘의</span><span>느티</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li>일기예보</li>
+                    <li>해결방법</li>
+                    <li>우산구매처</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+        <div class="clear"></div>
+        </header>
+        <link href="https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean" rel="stylesheet">
+
+
+        <div id="main_visual">
+            <div id="title_top">매일매일 다른 날씨처럼,</div>
+            <h2>오늘의기분은</h2>
+            <div id="title_bottom">맑음인가요?</div>
+        </div>
+       
+
+        <section>
+            <h3>당신의 날씨는 어떤가요?</h3>
+            <p> 집 밖에 나오자마자 느껴지는 온도와 습도는 오늘 하루 우리의 기분에게 큰 영향을 주곤해요.<br>
+                조각구름이 뜨기를 바라는 느티는 오늘도 빗방울에 지지않기 위해 열심히 살아갑니다.
+            </p>
+            <ul id="list">
+                <li>
+                    <img src="final/맑음.jpg">
+                    <dl>
+                        <dt>맑음</dt>
+                        <br>
+                        <dd>
+                            파란하늘에 조각 구름 몇 점 두둥실 떠다니는 하루!
+                            오늘은 우울함이라고는 찾아볼 수 없는 최고의 날이예요.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="final/흐림.jpg">
+                        <dl>
+                            <dt>흐림</dt><br>
+                            <dd>어두운 구름이 하늘을 덮어 습하고 우중충한 날이예요.
+                                우울감이 문득 덮쳐올 수 있으니 늘 조심할 것!
+                            </dd>
+                        </dl>
+                </li>
+                <li>
+                    <img src="final/눈.jpg">
+                        <dl>
+                            <dt>눈</dt><br>
+                            <dd>가장 평범하고 어쩌면 설렐 수 있는 날. 
+                                비에는 녹아버리는 느티는 눈에는 조금 힘을 낼 수 있답니다.
+                            </dd>
+                        </dl>
+                </li>
+                <li>
+                    <img src="final/비.jpg">
+                        <dl>
+                            <dt>비</dt><br>
+                            <dd>가장 위험한 날이예요. 빗방울을 느낀 순간부터 거대한 우울에 파묻혀 하염없이 가라앉아 버립니다.
+                            </dd>
+                        </dl>
+                </li>
+                <div class="clear"></div>                            
+            </ul>
+        </section>
+      
+
+    </div>
+</body>
+</html>
